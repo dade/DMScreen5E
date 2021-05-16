@@ -5,7 +5,7 @@
 	<announcement text="DM Screen by badgr_"/>
 	
 	<properties>
-		<name>D&amp;D 5E DM Screen</name>
+		<name>[DEV_1.0.0] D&amp;D 5E DM Screen</name>
 		<description>
 			<text>D&amp;D 5E DM Screen</text>
 			<author>badgr</author>
@@ -20,8 +20,10 @@
 	<base>
 		<!-- Global Scripts -->
 		<includefile source="strings/global_strings.xml"/>
-		<script file="desktop/scripts/dms_data_desktop.lua"/>
+		<script name="DMSDesktopManager" file="desktop/scripts/dms_data_desktop.lua"/>
 		<script name="DMScreenManager" file="scripts/manager_dmscreen.lua"/>
+		
+		<includefile source="campaign/record_dmscreen.xml"/>
 	</base>
 	
 </root>

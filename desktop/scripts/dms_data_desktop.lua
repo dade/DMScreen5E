@@ -1,14 +1,16 @@
 function onInit()
+	Debug.console("===============================\rTEST\r===============================");
+
 	local aRecords = {
 		["dmscreen"] = {
-			bExport = true,
+			bNoCategories = true,
 			sEditMode = "gm",
 			aDataMap = { "dmscreen", "reference.dmscreen" },
-			sListDisplayClass = "masterindexitem_dmscreen"
+			aDisplayIcon = { "button_dmscreen", "button_dmscreen_down" }
 		}
 	};
 
-	for kRecordType, vRecordType in pairs(aRecords) do
-		LibraryData.setRecordTypeInfo(kRecordType, vRecordType);
+	for k, v in pairs(aRecords) do
+		LibraryData.setRecordTypeInfo(k, v);
 	end
 end

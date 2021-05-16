@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root>
+	
+	<windowclass name="dmscreen">
+		<margins control="0,0,0,2"/>
+		<frame>recordsheet</frame>
+		<placement>
+			<size width="450" height="450"/>
+		</placement>
+		<sheetdata>
+			
+		</sheetdata>
+	</windowclass>
+	
+</root>

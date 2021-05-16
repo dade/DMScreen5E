@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root version="3.0" release="1.0.0">
+	
+	<announcement text="DM Screen by badgr_"/>
+	
+	<properties>
+		<name>D&amp;D 5E DM Screen</name>
+		<description>
+			<text>D&amp;D 5E DM Screen</text>
+			<author>badgr</author>
+			<website>https://github.com/dade</website>
+		</description>
+		<loadorder>99</loadorder>
+		<ruleset>
+			<name>5E</name>
+		</ruleset>
+	</properties>
+	
+	<base>
+		<!-- Global Scripts -->
+		<includefile source="strings/global_strings.xml"/>
+		<script file="desktop/scripts/dms_data_desktop.lua"/>
+		<script name="DMScreenManager" file="scripts/manager_dmscreen.lua"/>
+	</base>
+	
+</root>
